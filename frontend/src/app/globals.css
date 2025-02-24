@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  body {
+    @apply bg-brutalist-white text-brutalist-black;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .border-brutal {
+    @apply border-4 border-brutalist-black shadow-brutal;
+  }
+}
+
+.prose-brutalist {
+  @apply prose-headings:font-mono
+         prose-headings:text-brutalist-black
+         prose-p:text-brutalist-black
+         prose-a:text-primary
+         prose-a:no-underline
+         prose-a:font-bold
+         prose-strong:text-brutalist-black
+         prose-strong:font-bold
+         prose-code:text-brutalist-black
+         prose-code:bg-accent
+         prose-code:px-2
+         prose-code:py-1
+         prose-code:rounded-none
+         prose-code:border-2
+         prose-code:border-brutalist-black;
+}
