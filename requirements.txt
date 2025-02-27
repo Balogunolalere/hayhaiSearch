@@ -1,15 +1,19 @@
 aiohttp==3.9.3
+aiohttp-socks==0.8.4  # For proxy support if needed
+aiolimiter==1.1.0
 annotated-types==0.7.0
 anyio==4.6.2.post1
 beautifulsoup4==4.12.3
+brotli==1.1.0  # For handling Brotli compressed responses
 bs4==0.0.2
 cachetools==5.5.0
 certifi==2024.8.30
 charset-normalizer==3.4.1
+cloudscraper==1.2.71  # For bypassing some website protections
 colorama==0.4.6
 contourpy==1.3.1
 cycler==0.12.1
-defusedxml==0.7.1
+defusedxml==0.7.1  # For safer XML processing
 distro==1.9.0
 docstring_parser==0.16
 exceptiongroup==1.2.2
@@ -21,6 +25,7 @@ google-api-python-client==2.157.0
 google-auth==2.37.0
 google-auth-httplib2==0.2.0
 google-generativeai==0.8.3
+google-genai==0.2.2
 googleapis-common-protos==1.66.0
 groq==0.12.0
 grpcio==1.69.0
@@ -28,11 +33,12 @@ grpcio-status==1.69.0
 h11==0.14.0
 httpcore==1.0.7
 httplib2==0.22.0
-httpx==0.27.2
+httpx[http2]==0.27.2  # With HTTP/2 support
 idna==3.10
 iniconfig==2.0.0
 jiter==0.7.1
 kiwisolver==1.4.8
+lxml==5.1.0  # Faster HTML parser
 markdown-it-py==3.0.0
 matplotlib==3.10.0
 mdurl==0.1.2

@@ -23,17 +23,114 @@
 .prose-brutalist {
   @apply prose-headings:font-mono
          prose-headings:text-brutalist-black
+         prose-headings:border-b-2
+         prose-headings:border-brutalist-black/10
+         prose-headings:pb-2
+         prose-headings:mb-4
          prose-p:text-brutalist-black
+         prose-p:leading-relaxed
+         prose-p:tracking-wide
          prose-a:text-primary
          prose-a:no-underline
          prose-a:font-bold
          prose-strong:text-brutalist-black
          prose-strong:font-bold
          prose-code:text-brutalist-black
-         prose-code:bg-accent
+         prose-code:bg-accent/30
          prose-code:px-2
          prose-code:py-1
          prose-code:rounded-none
          prose-code:border-2
-         prose-code:border-brutalist-black;
+         prose-code:border-brutalist-black
+         prose-li:text-brutalist-black
+         prose-li:my-1;
+}
+
+.prose-brutalist h2 {
+  @apply text-2xl font-bold mt-8 mb-4;
+}
+
+.prose-brutalist h3 {
+  @apply text-xl font-bold mt-6 mb-3;
+}
+
+.prose-brutalist p {
+  @apply mb-6 whitespace-pre-wrap;
+}
+
+.prose-brutalist .source-citation {
+  @apply text-sm text-brutalist-black/70 italic my-2;
+}
+
+.prose-brutalist .list-item {
+  @apply flex items-start gap-2 my-2;
+}
+
+.prose-brutalist pre {
+  @apply bg-brutalist-black/5 p-4 my-6 overflow-x-auto border-2 border-brutalist-black 
+         relative rounded-none;
+}
+
+.prose-brutalist pre code {
+  @apply bg-transparent border-none p-0 text-sm leading-relaxed;
+}
+
+.prose-brutalist table {
+  @apply border-collapse w-full my-6;
+}
+
+.prose-brutalist table th {
+  @apply bg-brutalist-black/5 font-bold text-left p-3 border-2 
+         border-brutalist-black text-brutalist-black;
+}
+
+.prose-brutalist table td {
+  @apply p-3 border border-brutalist-black/20 text-brutalist-black;
+}
+
+.prose-brutalist table tr:nth-child(even) {
+  @apply bg-brutalist-black/[0.02];
+}
+
+.prose-brutalist ul {
+  @apply my-4 space-y-2;
+}
+
+.prose-brutalist li {
+  @apply flex items-start gap-2;
+}
+
+.prose-brutalist li:before {
+  @apply flex-shrink-0;
+  content: "•";
+}
+
+.prose-brutalist ol {
+  @apply my-4 space-y-2 list-decimal list-inside;
+}
+
+.prose-brutalist ol > li {
+  @apply pl-4;
+}
+
+.prose-brutalist blockquote {
+  @apply border-l-4 border-brutalist-black/20 pl-4 my-4 italic;
+}
+
+.prose-brutalist hr {
+  @apply border-t-2 border-brutalist-black/10 my-8;
+}
+
+.prose-brutalist .citation {
+  @apply inline-flex items-center px-2 py-1 my-1 text-sm text-brutalist-black/70 
+         bg-brutalist-black/5 border border-brutalist-black/20 rounded-sm;
+}
+
+.prose-brutalist code {
+  @apply font-mono text-sm bg-brutalist-black/5 px-2 py-1 rounded-sm 
+         border border-brutalist-black/20;
+}
+
+.prose-brutalist h3 + p {
+  @apply mt-4;
 }
